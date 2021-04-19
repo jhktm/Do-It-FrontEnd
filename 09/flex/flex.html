@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>플렉서블 박스 레이아웃</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <style>
+      body {
+        padding:20px;
+      }
+      .container {
+        display:flex;
+        margin-bottom: 20px;
+        background-color:#eee;
+        border:1px solid #222;
+        width: 250px;
+        height: 250px;
+        flex-flow: wrap row;
+      }
+      .opt1{
+        justify-content: flex-start;
+      }
+      .opt2{
+        justify-content: flex-end;
+      }
+      .opt3{
+        justify-content: center;
+      }
+      .opt4{
+        justify-content: space-between;
+      }
+      .opt5{
+      align-content: stretch;
+          }
+
+      .box {
+        width:100px;
+        height:50px;
+        margin:5px;   
+        background-color:#222;   
+      }
+      p {
+        color:#fff;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <div class="container opt1">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+    <div class="box"><p>5</p></div>
+    <div class="box"><p>6</p></div>    
+  </div>
+  <div class="container opt2">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+    <div class="box"><p>5</p></div>
+    <div class="box"><p>6</p></div>    
+  </div>
+  <div class="container opt3">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+    <div class="box"><p>5</p></div>
+    <div class="box"><p>6</p></div>    
+  </div>
+  <div class="container opt4">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+    <div class="box"><p>5</p></div>
+    <div class="box"><p>6</p></div>    
+  </div>
+   <div class="container opt5">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+    <div class="box"><p>5</p></div>
+    <div class="box"><p>6</p></div>    
+  </div>
+</body>
+</html>
